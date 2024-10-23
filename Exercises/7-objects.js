@@ -7,6 +7,21 @@
 - Try to assign other object to both identifiers.
 - Explain script behaviour. */
 
-const fn = null;
+const fn = () => {
+    const objectConst = {name: "Anton"};
+    let objectLet = {name: "Maria"};
+
+    objectConst.name = "Pavlo";
+    objectLet.name = "Tetiana";
+
+    /*
+    objectConst = {year: 56};
+    Output error, because "objectConst" was initialized as const
+    */
+
+    objectLet = {year: 56};
+
+    return objectLet;
+};
 
 module.exports = { fn };

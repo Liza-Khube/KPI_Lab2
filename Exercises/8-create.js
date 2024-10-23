@@ -5,6 +5,9 @@
   Example: `createUser('Marcus Aurelius', 'Roma')`
   will return object `{ name: 'Marcus Aurelius', city: 'Roma' }` */
 
-const createUser = null;
+const createUser = (name, city) => {
+  if (typeof name !== "string" || typeof city !== "string") throw "Name and city expected to be string";
+  return {name, city};
+};
 
 module.exports = { createUser };

@@ -2,6 +2,6 @@
 
 // Define variable to store your name as a string
 
-let name = undefined;
+let name = "Elizabeth";
 
 module.exports = { name };

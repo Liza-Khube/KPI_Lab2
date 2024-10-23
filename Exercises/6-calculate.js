@@ -16,12 +16,17 @@
 Call functions `square` and `cube` in loop, then pass their
 results to function `average`. Print what `average` returns. */
 
-const square = null;
+const square = (x) => x**2;
+const cube = (x) => x**3;
+const average = (a, b) => (a + b) / 2;
 
-const cube = null;
-
-const average = null;
-
-const calculate = null;
+const calculate = () => {
+  const array = [];
+  for (let i = 0; i <= 9; i++) {
+    const element = average(square(i), cube(i));
+    array.push(element);
+  };
+  return array;
+};
 
 module.exports = { square, cube, average, calculate };

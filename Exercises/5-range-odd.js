@@ -3,6 +3,13 @@
 // Implement function `rangeOdd(start: number, end: number)` returning
 // array with all odd numbers from the range [15, 30] including endpoints
 
-const rangeOdd = null;
+const rangeOdd = (start, end) => {
+    const arr = [];
+    while (start <= end) {
+        if (start % 2 !== 0) arr.push(start);
+        start++;
+    };
+    return arr;
+};
 
 module.exports = { rangeOdd };
