@@ -20,8 +20,6 @@ const fn = () => {
     */
 
     objectLet = {year: 56};
-
-    return objectLet;
 };
 
 module.exports = { fn };
